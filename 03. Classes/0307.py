@@ -14,9 +14,9 @@ class MyClass:
 # print(inst.VAL)
 
 
-
 class MyVal:
     VAL = 10
+
 
 v = MyVal()
 print(v.VAL)

@@ -18,6 +18,7 @@ print(another_my_class_instant)
 class MyClassVar:
     var = 10
 
+
 var_class_1 = MyClassVar()
 print(var_class_1.var)
 

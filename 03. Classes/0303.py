@@ -14,5 +14,6 @@ class JoeMethod:
     def call_me(self):
         print('I am the call_me method from the JoeMethod class')
 
+
 jojo = JoeMethod()
 jojo.call_me()  # instance is passed/bound by default

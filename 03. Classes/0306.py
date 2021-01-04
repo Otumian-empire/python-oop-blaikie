@@ -7,7 +7,7 @@ class MyInteger:
     def __init__(self, val):
         print('calling __init__')
         try:
-            val=int(val)
+            val = int(val)
         except ValueError:
             val = 0
         self.value = val

@@ -69,8 +69,3 @@ print(var)      =>    var.__repr__()
 '''
 
 # rafekettler.com
-
-
-
-
-
