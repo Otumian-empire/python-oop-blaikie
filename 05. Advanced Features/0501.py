@@ -22,7 +22,7 @@
 # print(fullname)
 
 
-# using magic methods
+# Using magic methods
 
 
 class SumList:
@@ -41,8 +41,11 @@ class SumList:
         # new_list = [self.this_list[i] + other_sumlist.this_list[i]
         #             for i in range(len(self.this_list))]
 
-        new_list = [x + y for x,
-                    y in zip(self.this_list, other_sumlist.this_list)]
+        # new_list = [x + y for x,
+        #             y in zip(self.this_list, other_sumlist.this_list)]
+
+        new_list = [sum(pair) for pair in zip(
+            self.this_list, other_sumlist.this_list)]
 
         return SumList(new_list)
 
@@ -57,7 +60,7 @@ c = a + b
 print(c)
 
 
-# some magic methods - core syntax resolution
+# Some magic methods - core syntax resolution
 
 '''
 "abc" in var    =>    var.__contains__("abc")
